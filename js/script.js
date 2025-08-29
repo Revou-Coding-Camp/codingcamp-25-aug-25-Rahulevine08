@@ -1,6 +1,6 @@
 console.log("Hello World!!");
 
-// greet();
+greet();
 
 // Greet the user
 function greet() {
