@@ -7,17 +7,99 @@
 
     <!-- Css External -->
     <link rel="stylesheet" href="css\style.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
     
     <!-- Header content -->
-    <header></header>
+    <header class="main-header py-[8px] px-[4px]">
+
+        <!-- Icon -->
+        <div class="logo"></div>
+
+        <!-- Navbar -->
+        <nav class="flex">
+            <a href="#home-page" class="border p-[4px]">Home</a>
+            <a href="#our-profile" class="border p-[4px]">Our Profile</a>
+            <a href="#portofolio" class="border p-[4px]">Portofolio</a>
+            <a href="#message-us" class="border p-[4px]">Message Us</a>
+        </nav>
+
+    </header>
+
+    <hr/>   
 
     <!-- Main Content -->
-    <main></main>
+    <main>
+
+        <!-- Home -->
+        <section id="home-page" class="min-h-[500px]">
+            <header>
+                <h2 class="text-center text-[24px] font-bold py-[16px]">
+                    Welcome <span id="username"></span> to Rahul Company
+                </h2>
+            </header>
+            <p class="text-center px-[16px]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+
+            </p>
+        </section>
+
+        <hr/>
+
+        <!-- Our Profile  -->
+        <section id="our-profile" class="min-h-[500px]">
+            <header>
+                <h2 class="text-center text-[24px] font-bold py-[16px]">
+                    Our Profile
+                </h2>
+            </header>
+        </section>
+
+        <hr/>
+
+        <!-- Portofolio -->
+        <section id="portofolio" class="min-h-[500px]">
+            <header>
+                <h2 class="text-center text-[24px] font-bold py-[16px]">
+                    Portofolio
+                </h2>
+            </header>
+        </section>
+
+        <hr/>
+
+        <!-- Message Us -->
+         <section id="message-us" class="min-h-[500px]">
+            <header>
+                <h2 class="text-center text-[24px] font-bold py-[16px]">
+                    Message Us
+                </h2>
+            </header>
+
+            <form class="px-[16px]">
+                    <label for="name-input" class="block py-[4px]">
+                        Nama:
+                    <input type="text" id="name-input" name="name" class="border p-[4px] w-full" required>
+                </label>
+
+                <button type="button" onclick="validateForm();" class="bg-blue-500 text-white p-[8px] rounded">Send</button>
+            </form>
+         </section>
+
+    </main>
+
+    <hr/>
+
 
     <!-- Footer Content -->
-    <footer></footer>
+    <footer class="text-center">
+
+        <p>&copy; 2025 Rahul Company. All Rights Reserved.</p>
+
+    </footer>
 
 
 
