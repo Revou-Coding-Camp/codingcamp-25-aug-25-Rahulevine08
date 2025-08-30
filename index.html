@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kedai Kopi Kayo</title>
 
     <!-- Css External -->
     <link rel="stylesheet" href="css\style.css">
@@ -12,19 +12,20 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    
+
     <!-- Header content -->
     <header class="main-header py-[8px] px-[4px]">
 
         <!-- Icon -->
-        <div class="logo"></div>
-
+        <div>
+            <img src="img\Coffee Kayo Final.png" alt="Kopi Kayo" class="kopikayo">
+        </div>
         <!-- Navbar -->
-        <nav class="flex">
-            <a href="#home-page" class="border p-[4px]">Home</a>
-            <a href="#our-profile" class="border p-[4px]">Our Profile</a>
-            <a href="#portofolio" class="border p-[4px]">Portofolio</a>
-            <a href="#message-us" class="border p-[4px]">Message Us</a>
+        <nav class="nav-bar">
+            <a href="#home-page" class="p-[20px]">Home</a>
+            <a href="#our-profile" class="p-[20px]">Our Profile</a>
+            <a href="#portofolio" class="p-[20px]">Portofolio</a>
+            <a href="#message-us" class="p-[20px]">Message Us</a>
         </nav>
 
     </header>
@@ -37,25 +38,46 @@
         <!-- Home -->
         <section id="home-page" class="min-h-[500px]">
             <header>
-                <h2 class="text-center text-[24px] font-bold py-[16px]">
-                    Welcome <span id="username"></span> to Rahul Company
+                <h2 class="text-center text-[32px] font-bold px-[30px] py-[20px]">
+                    Halo <span id="username"></span>, Welcome to Kedai Kopi Kayo
                 </h2>
             </header>
-            <p class="text-center px-[16px]">
+                <div class="imgcoffee">
+                    <img src="img\Making Coffee.jpg" alt="Kopi Kayo">
+                    
+                    <!-- <div class="home-tittle">
+                        "A Cup Of Happiness For Your Day"
+                    </div> -->
+                    <div class="transparent-box"> <!-- Konten Anda di sini -->
+                        <p>"A Cup Of Happiness For Your Day"</p>
+                    </div>
+                    <div class="home-sub">
+                        <p>
+                            bukan sekadar ucapan, ini adalah janji kami untuk menghadirkan momen kecil yang bermakna di tengah kesibukan mu. Melalui setiap tegukan, kami ingin menyapa harimu dengan kehangatan, ketenangan, dan senyum yang tulus. Entah itu pagi yang sibuk, siang yang melelahkan, atau malam yang menenangkan, secangkir minuman dari kami siap menjadi teman setia yang menyempurnakan harimu.
+                        </p>
+                    </div>
+                </div>
+
+            <!-- <p class="text-center px-[16px]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
 
-            </p>
+            </p> -->
         </section>
 
-        <hr/>
-
         <!-- Our Profile  -->
-        <section id="our-profile" class="min-h-[500px]">
+        <section id="our-profile" class="min-h-[600px]">
             <header>
-                <h2 class="text-center text-[24px] font-bold py-[16px]">
+                <h2 class="text-center text-[42px] font-bold pb-[10px] py-[20px]">
                     Our Profile
                 </h2>
             </header>
+                <div>
+                    <img src="img\Coffee Kayo F.png" alt="Profil" class="imgprofil">
+                    <p class="profil-sub">
+                        Kopi Kayo adalah Kedai Kopi yang tidak hanya menjual berbagai jenis olahan kopi, namun juga memperkenalkan budaya, adat, dan tradisi khas Kerinci. Kerinci adalah suatu daerah di Pulau Sumatra yang terletak di Provinsi Jambi. Dimana kata "Kayo" di ambil dari bahasa Kerinci yang berarti Mas, Abang, atau Laki-laki yang di tua kan.
+                        Kedai Kopi Kayo tidak hanya menjual minuman yang berasal dari buah kopi saja, namun terdapat tradisi dimana daun kopi juga di olah dan di minum layaknya teh dengan menggunakan cangkir yang terbuat dari cangkang kelapa yang sudah di bersihkan.
+                    </p>
+                </div>
         </section>
 
         <hr/>
@@ -63,10 +85,30 @@
         <!-- Portofolio -->
         <section id="portofolio" class="min-h-[500px]">
             <header>
-                <h2 class="text-center text-[24px] font-bold py-[16px]">
+                <h2 class="text-center text-[42px] font-bold pb-[10px] py-[20px]">
                     Portofolio
                 </h2>
             </header>
+            <div class="pembungkus">
+                <div class="polaroid">
+                    <img src="img\coffee 1.jpg" alt="5 Terre" style="width:100%">
+                        <div class="container">
+                            <p>Coffee With Sugar</p>
+                        </div>
+                </div>
+                <div class="polaroid2">
+                    <img src="img\coffee 2.jpg" alt="5 Terre" style="width:100%">
+                        <div class="container2">
+                            <p>Coffee With Sugar</p>
+                        </div>
+                </div>
+                <div class="polaroid3">
+                    <img src="img\coffee 3.jpg" alt="5 Terre" style="width:100%">
+                        <div class="container2">
+                            <p>Coffee With Sugar</p>
+                        </div>
+                </div>
+            </div>
         </section>
 
         <hr/>
@@ -74,30 +116,46 @@
         <!-- Message Us -->
          <section id="message-us" class="min-h-[500px]">
             <header>
-                <h2 class="text-center text-[24px] font-bold py-[16px]">
+                <h2 class="text-center text-[42px] font-bold pb-[10px] py-[20px]">
                     Message Us
                 </h2>
             </header>
 
-            <form class="px-[16px]">
-                    <label for="name-input" class="block py-[4px]">
-                        Nama:
-                    <input type="text" id="name-input" name="name" class="border p-[4px] w-full" required>
-                </label>
-
-                <button type="button" onclick="validateForm();" class="bg-blue-500 text-white p-[8px] rounded">Send</button>
+            <div class="pembungkus2 flex justify-center">
+                <div class="kiri">
+                    <form class="px-[16px]" id="myform">
+                   <label for="name" class="block py-[2px]">
+                           Nama:
+                       <input type="text" id="name-input" class="border p-[2px]" required>
+                   </label>
+                   
+                   <label for="email" class="block py-[2px]">
+                           Email:
+                       <input type="email" id="email-input" class="border p-[2px]" required>
+                   </label>
+   
+                   <label for="message" class="block py-[8px]">
+                           Message:
+                       <textarea id="message-input" class="border p-[2px]" rows="4" cols="50" required>
+                       </textarea>
+                   <button type="submit" onclick="validateForm();" class="submit-btn bg-blue-500 text-white p-[8px] rounded">Send</button>
+                </div>
+                    <div class="shapes">
+                        <div id="hasilOutput"></div>
+                    </div>
             </form>
+            </div>
+           
+            
          </section>
 
     </main>
-
-    <hr/>
 
 
     <!-- Footer Content -->
     <footer class="text-center">
 
-        <p>&copy; 2025 Rahul Company. All Rights Reserved.</p>
+        <p>&copy; 2025 Kedai Kopi Kayo. All Rights Reserved.</p>
 
     </footer>
 
